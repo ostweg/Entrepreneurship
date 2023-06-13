@@ -33,11 +33,10 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                  width: 30,
                  height: 30,
                  decoration: BoxDecoration(
-                   image:DecorationImage(
+                   image:const DecorationImage(
                      image: AssetImage(
                        "images/person.png"
                      ),
-
                    ),
                    borderRadius: BorderRadius.circular(10),
                    color: Colors.grey.withOpacity(0.1)
@@ -82,7 +81,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                ListView.builder(
                  itemCount:4,
                  scrollDirection: Axis.horizontal,
-                 itemBuilder: (BuildContext context, int index) {
+                 itemBuilder: (_, int index) {
                    return Container(
                      margin: const EdgeInsets.only(right:15,top:10),
                      width: 200,
