@@ -1,7 +1,9 @@
+import 'package:entre/cubit/app_cubits.dart';
 import 'package:entre/widgets/general_button.dart';
 import 'package:entre/widgets/text_description.dart';
 import 'package:entre/widgets/text_title.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class StartPage extends StatefulWidget {
   const StartPage({super.key});
@@ -56,7 +58,15 @@ class _StartPageState extends State<StartPage> {
                           )
                         ),
                         const SizedBox(height: 20),
-                        GeneralButton(width: 80,)
+                        GestureDetector(
+                          onTap: () {
+                            BlocProvider.of<AppCubits>(context).getData();
+                          },
+                          child: Container(
+                              width:100,
+                              child: Row(children: [GeneralButton(width: 80,)])
+                          ),
+                        )
                       ],
                     ),
                     Column(

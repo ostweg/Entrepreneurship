@@ -1,5 +1,8 @@
 import 'package:entre/cubit/app_cubits.dart';
 import 'package:entre/cubit/cubit_states.dart';
+import 'package:entre/pages/detail_page.dart';
+import 'package:entre/pages/home_page.dart';
+import 'package:entre/pages/main_page.dart';
 import 'package:entre/pages/start_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -21,6 +24,18 @@ class _AppCubitLogics extends State<AppCubitLogics> {
             {
               return StartPage();
             }
+          if(state is LoadedState)
+          {
+            return MainPage();
+          }
+          if(state is DetailState)
+          {
+            return DetailPage();
+          }
+          if(state is LoadingState)
+          {
+            return Center(child: CircularProgressIndicator());
+          }
           else{
             return Container();
           }
