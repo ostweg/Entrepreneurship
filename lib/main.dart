@@ -4,6 +4,7 @@ import 'package:entre/pages/detail_page.dart';
 import 'package:entre/pages/main_page.dart';
 import 'package:entre/pages/start_page.dart';
 import 'package:entre/services/data_services.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

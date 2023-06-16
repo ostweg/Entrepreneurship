@@ -16,13 +16,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
-  List images = [
-    "harmonyhaven.png",
-    "greenthumbsociety.png",
-    "artisticexpressions.png",
-    "foodforall.png",
-    "ecowarriors.png"
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -149,10 +142,10 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                  ),
                  SizedBox(height: 10),
                  Container(
-                   height: 500,
+                   height: 300,
                    child: ListView.builder(
                        physics: AlwaysScrollableScrollPhysics(),
-                       itemCount: 5,
+                       itemCount: listingsSuggested.length,
                        itemBuilder:(context,index){
                          return GestureDetector(
                            onTap: (){
