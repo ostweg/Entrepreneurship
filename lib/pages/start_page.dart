@@ -64,7 +64,7 @@ class _StartPageState extends State<StartPage> {
                           },
                           child: Container(
                               width:100,
-                              child: Row(children: [GeneralButton(width: 80,)])
+                              child: Row(children: [GeneralButton(width: 80,text:"")])
                           ),
                         )
                       ],

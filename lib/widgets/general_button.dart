@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 class GeneralButton extends StatelessWidget {
   bool responsive;
   double? width;
-  GeneralButton({Key? key,this.width=120, this.responsive=false}): super(key:key);
+  String text;
+  GeneralButton({Key? key,this.width=120, this.responsive=false,required this.text}): super(key:key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class GeneralButton extends StatelessWidget {
         child:Row(
           mainAxisAlignment: responsive==true?MainAxisAlignment.spaceBetween:MainAxisAlignment.center,
           children: [
-            responsive==true?Container(margin:const EdgeInsets.only(left: 20),child: TextTitle(text: "Apply",color:Colors.white,size: 15,)):Container(),
+            responsive==true?Container(margin:const EdgeInsets.only(left: 20),child: TextTitle(text:this.text,color:Colors.white,size: 15,)):Container(),
             Image.asset("images/button1.png")
           ],
         )

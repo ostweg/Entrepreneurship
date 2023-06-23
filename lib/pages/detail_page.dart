@@ -151,7 +151,7 @@ class _DetailPageState extends State<DetailPage> {
                           SizedBox(height:20),
                           TextTitle(text: "Description", color:Colors.black.withOpacity(0.8)),
                           SizedBox(height: 5,),
-                          TextDescription(text: detailState.listing.description,size: 12,)
+                          TextDescription(text: detailState.listing.description,size: 12,),
                         ],
                       ),
                     )),
@@ -164,6 +164,7 @@ class _DetailPageState extends State<DetailPage> {
                         BasicButton(size: 60, color: Color(0xFF4c8bfc).withOpacity(0.6), backgroundColor: Colors.white, borderColor: Color(0xFF4c8bfc).withOpacity(0.4),isIcon: true,icon: Icons.bookmark_border),
                         SizedBox(width: 20),
                         GeneralButton(
+                          text: "Apply",
                           responsive: true,
                         )
                       ],
