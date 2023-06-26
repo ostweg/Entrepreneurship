@@ -1,16 +1,12 @@
-# entre
+# Volunteer Connect
 
-A new Flutter project.
+Connect volunteering projects with people wanting to volunteer.
 
-## Getting Started
+## Prerequisites
 
-This project is a starting point for a Flutter application.
+In order for this project to completely work you need:
 
-A few resources to get you started if this is your first Flutter project:
+- [Internet connection]
+- [Valid google cloud console map api key](https://console.cloud.google.com/google/maps-apis/overview)
+- [Edited AndroidManifest.xml|AppDelegate.swift|index.html with your map api key](https://codelabs.developers.google.com/codelabs/google-maps-in-flutter#3)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
