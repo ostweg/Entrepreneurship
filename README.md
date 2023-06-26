@@ -13,5 +13,8 @@ In order for this project to completely work you need:
 
 ## Demo
 
-![VolunteerConnect1](https://github.com/ostweg/Entrepreneurship/demo/VolunteerConnect1.PNG?raw=true)
-
+![VolunteerConnect1](https://github.com/ostweg/Entrepreneurship/blob/main/demo/VolunteerConnect1.PNG)
+![VolunteerConnect2](https://github.com/ostweg/Entrepreneurship/blob/main/demo/VolunteerConnect2.PNG)
+![VolunteerConnect3](https://github.com/ostweg/Entrepreneurship/blob/main/demo/VolunteerConnect3.PNG)
+![VolunteerConnect4](https://github.com/ostweg/Entrepreneurship/blob/main/demo/VolunteerConnect4.PNG)
+![VolunteerConnect5](https://github.com/ostweg/Entrepreneurship/blob/main/demo/VolunteerConnect5.PNG)
