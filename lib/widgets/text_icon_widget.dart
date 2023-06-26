@@ -15,7 +15,7 @@ class TextIconWidget extends StatelessWidget {
       children: [
         Icon(icon, color: color),
         TextDescription(
-          text: text,
+          text: text.length>24&&MediaQuery.of(context).size.width<574?text.substring(0,23)+"...":text,
           color: Colors.black.withOpacity(0.8),
           size: 11,
         )

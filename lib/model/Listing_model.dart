@@ -2,8 +2,8 @@ class ListingModel {
   String name;
   String description;
   int stars;
-  String latitude;
-  String longitude;
+  double latitude;
+  double longitude;
   String city;
   int pricerperhour;
   String image;

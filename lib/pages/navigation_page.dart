@@ -39,7 +39,7 @@ class _NavigationPageState extends State<NavigationPage> {
                         onMapCreated: (controller) {
                           mapController = controller;
                           for(var i in listings){
-                            addMarker(i.name, LatLng(double.parse(i.latitude), double.parse(i.longitude)),i.name,i.description.substring(0,80)+"...");
+                            addMarker(i.name, LatLng(i.latitude, i.longitude),i.name,i.description.substring(0,80)+"...");
                           }
                         },
                         markers: markers.values.toSet(),

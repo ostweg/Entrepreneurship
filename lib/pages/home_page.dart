@@ -142,7 +142,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                  ),
                  SizedBox(height: 10),
                  Container(
-                   height: 300,
+                   height: MediaQuery.of(context).size.height-630,
                    child: ListView.builder(
                        physics: AlwaysScrollableScrollPhysics(),
                        itemCount: listingsSuggested.length,
@@ -196,7 +196,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                                                children: [
                                                  TextIconWidget(text:"Switzerland, "+listingsSuggested.elementAt(index).city, icon: Icons.location_on,color: const Color(0xFF4c8bfc),),
                                                  SizedBox(width: 5),
-                                                 TextIconWidget(text:"CHF "+listingsSuggested.elementAt(index).pricerperhour.toString()+"/hour", icon: Icons.attach_money,color: Colors.green),
+                                                 TextIconWidget(text:"CHF "+listingsSuggested.elementAt(index).pricerperhour.toString()+"/h", icon: Icons.attach_money,color: Colors.green),
                                                ],
                                              )
                                            ],
