@@ -35,3 +35,10 @@ class DetailState extends CubitStates{
   // TODO: implement props
   List<Object> get props => [listing];
 }
+class MapState extends CubitStates{
+  MapState(this.listings);
+  final List<ListingModel> listings;
+  @override
+  // TODO: implement props
+  List<Object> get props => [listings];
+}
