@@ -18,6 +18,11 @@ class _StartPageState extends State<StartPage> {
     "happywomen2.jpg"
   ];
 
+  List startText = [
+    "This is a student based solution still in the process of development. Currently this version is only for gui use.",
+    "With that being said enjoy your volunteering experience!"
+  ];
+
   //create text list with texts and reuse the same way as images with index
 
   @override
@@ -52,13 +57,13 @@ class _StartPageState extends State<StartPage> {
                         Container(
                           width: 250,
                           child:TextDescription(
-                              text:"This is a student based solution still in the process of development. Currently this version is only for gui use.",
+                              text:startText[index],
                               color:const Color(0xFF989acd), //find matching color pattern
                               size:14,
                           )
                         ),
                         const SizedBox(height: 20),
-                        GestureDetector(
+                        index==1?GestureDetector(
                           onTap: () {
                             BlocProvider.of<AppCubits>(context).getData();
                           },
@@ -66,7 +71,7 @@ class _StartPageState extends State<StartPage> {
                               width:100,
                               child: Row(children: [GeneralButton(width: 80,text:"")])
                           ),
-                        )
+                        ):Container(),
                       ],
                     ),
                     Column(
